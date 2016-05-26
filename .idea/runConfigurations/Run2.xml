@@ -4,7 +4,7 @@
     <option name="SPRING_BOOT_MAIN_CLASS" value="net.loxal.poc.booking.Application" />
     <option name="HIDE_BANNER" value="true" />
     <option name="ALTERNATIVE_JRE_PATH" />
-    <module name="booking" />
+    <module name="spring-boot-poc" />
     <envs />
     <method />
   </configuration>
