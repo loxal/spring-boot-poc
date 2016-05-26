@@ -1,0 +1,8 @@
+local:
+  target: http://localhost:8080
+
+net:
+  loxal:
+    poc:
+      booking:
+        contact: alexander.orlov@loxal.net

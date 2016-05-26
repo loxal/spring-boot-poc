@@ -1,0 +1,13 @@
+# Spring Boot
+config/
+
+# Maven-specific
+target/
+
+# IntelliJ-specific
+\.idea/workspace\.xml
+out/
+
+# Eclipse-specific
+.project
+.classpath
