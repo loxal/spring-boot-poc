@@ -14,7 +14,7 @@ To start this web application just follow these steps:
 
 1. Build the project via Maven:
 
-        `mvn clean spring-boot:run`
+        mvn clean spring-boot:run
 
 3. Browse to the application root for API documentation:
 
