@@ -24,6 +24,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
+import java.util.Objects;
 
 @MappedSuperclass
 abstract class AbstractPersistable implements Serializable, Persistable<Long> {
@@ -47,30 +48,16 @@ abstract class AbstractPersistable implements Serializable, Persistable<Long> {
     }
 
     @Override
-    public boolean equals(final Object obj) {
-        if (null == obj) {
-            return false;
-        }
-
-        if (this == obj) {
-            return true;
-        }
-
-        if (!getClass().equals(obj.getClass())) {
-            return false;
-        }
-
-        final AbstractPersistable that = (AbstractPersistable) obj;
-
-        return null != this.getId() && this.getId().equals(that.getId());
+    public boolean equals(final Object o) {
+        if (this == o) return true;
+        if (!(o instanceof AbstractPersistable)) return false;
+        final AbstractPersistable that = (AbstractPersistable) o;
+        return Objects.equals(id, that.id);
     }
 
     @Override
     public int hashCode() {
-        int hashCode = 17;
-        hashCode += null == getId() ? 0 : getId().hashCode() * 31;
-
-        return hashCode;
+        return Objects.hash(id);
     }
 
 }
