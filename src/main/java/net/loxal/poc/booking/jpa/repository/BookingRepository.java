@@ -19,7 +19,7 @@ package net.loxal.poc.booking.jpa.repository;
 import net.loxal.poc.booking.jpa.domain.Booking;
 import net.loxal.poc.booking.jpa.domain.Vehicle;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.Set;
@@ -29,7 +29,7 @@ import java.util.Set;
  * http://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods
  */
 
-@Component
+@Repository
 public interface BookingRepository extends JpaRepository<Booking, Long> {
     Set<Booking> findByVehicleAndStatusIn(Vehicle vehicle, Collection<Booking.Status> status);
 }

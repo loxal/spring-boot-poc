@@ -34,7 +34,6 @@
         <!-- start class for spring boot -->
         <start-class>net.loxal.poc.booking.Application</start-class>
 
-        <!-- dependency versions -->
         <swagger-springmvc.version>0.8.8</swagger-springmvc.version>
         <scala-library.version>2.10.4</scala-library.version>
         <swagger-spring-mvc-ui.version>0.4</swagger-spring-mvc-ui.version>
